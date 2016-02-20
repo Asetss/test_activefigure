@@ -11,12 +11,12 @@ class JsonParse {
     }
 
     function scoreUnset($arr) {
-	    if($arr['score'] <= $this->min) {
+	if($arr['score'] <= $this->min) {
           if($arr['type'] === $this->type){
             return false;
           }
-	    }
-	    return true;
+        }
+	return true;
     }
 }
 
